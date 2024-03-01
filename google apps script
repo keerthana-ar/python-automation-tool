@@ -1,0 +1,27 @@
+function exportDataToCSV() {
+  // Get the active spreadsheet
+  var spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
+  // Get the active sheet
+  var sheet = spreadsheet.getActiveSheet();
+  
+  // Get all data in the active sheet
+  var data = sheet.getDataRange().getValues();
+  
+  // Create a CSV string variable
+  var csvContent = "";
+  
+  // Loop through all rows in the data
+  for (var i = 0; i < data.length; i++) {
+    // Concatenate the phone number and message with a comma separator
+    var row = data[i].join(",");
+    // Add the row to the CSV content
+    csvContent += row + "\r\n";
+  }
+
+  // Convert the CSV content to Blob
+  var blob = Utilities.newBlob(csvContent, "text/csv", "messages.csv");
+  
+  // Save the Blob to Google Drive
+  var folder = DriveApp.getRootFolder(); // You can change this to the folder where you want to save the CSV file
+  folder.createFile(blob);
+}
