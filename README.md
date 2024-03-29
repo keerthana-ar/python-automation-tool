@@ -1,29 +1,29 @@
-#WhatsApp Bulk Messaging Tool
+# WhatsApp Bulk Messaging Tool
 This project automates sending WhatsApp messages using a Python script and a Google Apps Script.
 
-##Components:
+## Components:
 
 Python Script (send_whatsapp_message.py):
 Sends WhatsApp messages to phone numbers listed in a CSV file.
 Uses Selenium WebDriver to interact with the WhatsApp Web interface.
 
-##Requirements:
+## Requirements:
 Python 3
 Selenium WebDriver (Chrome or Firefox)
 Appropriate browser driver (e.g., chromedriver)
-Google Apps Script (create_csv.gs): (Optional)
+Google Apps Script (create_csv.gs): 
 Creates a CSV file from phone numbers and messages entered in a Google Sheet.
 
-##Requirements:
+## Requirements:
 Google Workspace account with access to Google Sheets
 
-##How it Works:
+## How it Works:
 
 Use the Google Apps Script (create_csv.gs) to populate a CSV file named messages.csv with phone numbers (first column) and messages (second column) from a Google Sheet.
 Update the Python script (send_whatsapp_message.py) with the path to your WebDriver and CSV file.
 Run the Python script. It will open WhatsApp Web, prompt you to scan the QR code, and then send messages according to the information in the CSV file.
 
-##Instructions:
+## Instructions:
 
 1. Install Dependencies:
 Install Python and Selenium WebDriver for your chosen browser (Chrome or Firefox).
@@ -40,18 +40,18 @@ Update driver_path with the absolute path to your downloaded browser driver.
 Update file_name with the path to your messages.csv file.
 Run the script (e.g., python send_whatsapp_message.py).
 
-##Disclaimer:
+## Disclaimer:
 
 Using this tool to automate sending messages might violate WhatsApp's terms of service. Use it responsibly and ethically.
 Be mindful of potential rate limits imposed by WhatsApp to avoid overwhelming their servers or getting your account flagged.
 This documentation provides a basic overview. Refer to the script code for detailed functionality.
 
-##Additional Notes:
+## Additional Notes:
 
 Consider error handling and progress reporting improvements for the Python script (e.g., using try-except blocks and informative messages).
 Explore alternative locators in the Python script that are less prone to breaking with changes in the WhatsApp Web interface.
 
-##Further Customization:
+## Further Customization:
 
 You can modify the Google Apps Script to handle more complex data formatting in the Google Sheet.
 The Python script can be extended to include features like message scheduling or sending attachments (if supported by WhatsApp Web).
