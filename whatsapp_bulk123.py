@@ -23,9 +23,7 @@ def send_whatsapp_message(phone_number, message):
         search_box.send_keys(phone_number)
         search_box.send_keys(Keys.ENTER)
        
-        message_box = WebDriverWait(browser, 10).until(
-            EC.presence_of_element_located((By.XPATH, "//*[@id='main']/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p"))
-        )
+        message_box = WebDriverWait(browser, 10).until(EC.presence_of_element_located((By.XPATH, "//*[@id='main']/footer/div[1]/div/span[2]/div/div[2]/div[1]/div/div[1]/p")))
         message_box.send_keys(message)
         message_box.send_keys(Keys.ENTER)
         print(f"Message sent to {phone_number}")
