@@ -14,6 +14,7 @@ Selenium WebDriver (Chrome or Firefox) : Install the python selenium library on 
 pip install selenium
 ```
 Appropriate browser driver (e.g., chromedriver)
+
 Google Apps Script: Creates a CSV file from phone numbers and messages entered in a Google Sheet.
 
 ## Requirements:
@@ -22,7 +23,9 @@ Google Workspace account with access to Google Sheets
 ## How it Works:
 
 Use the Google Apps Script to populate a CSV file named messages.csv with phone numbers (first column) and messages (second column) from a Google Sheet.
+
 Update the Python script (whatsapp_bulk123.py) with the path to your WebDriver and CSV file.
+
 Run the Python script. It will open WhatsApp Web, prompt you to scan the QR code, and then send messages according to the information in the CSV file.
 
 ## Instructions:
