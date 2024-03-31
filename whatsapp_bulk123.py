@@ -8,7 +8,6 @@ from selenium.webdriver.support import expected_conditions as EC
 
 def send_whatsapp_message(phone_number, message):
     # Path to your WebDriver
-    #driver_path = 'C:\Users\Keerthana A R\Downloads\chromedriver_win32'
     # Choose the browser (Chrome or Firefox)
     browser = webdriver.Chrome()
     # or use webdriver.Firefox(executable_path=driver_path)
