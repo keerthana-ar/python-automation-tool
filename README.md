@@ -56,7 +56,7 @@ Extract the downloaded WebDriver and place the executable file in a directory ac
 
 Use the Google Apps Script to populate a CSV file named messages.csv with phone numbers (first column) and messages (second column) from a Google Sheet.
 
-Update the Python script (whatsapp_bulk123.py) with the path to your WebDriver and CSV file.
+Update the Python script (whatsapp_bulk.py) with the path to your WebDriver and CSV file.
 
 Run the Python script. It will open WhatsApp Web, prompt you to scan the QR code, and then send messages according to the information in the CSV file.
 
@@ -70,12 +70,13 @@ Download the appropriate browser driver (e.g., chromedriver) and place it in a d
 Copy the provided google apps script into a new Google Apps Script project.
 Update the script with the specific sheet name and column references where your phone numbers and messages reside.
 Run the script to generate the messages.csv file.
+Download the CSV file from your google drive to your system.
 
-3. Python Script:
-Replace placeholders in whatsapp_bulk123.py:
+4. Python Script:
+Replace placeholders in whatsapp_bulk.py:
 Update driver_path with the absolute path to your downloaded browser driver.
 Update file_name with the path to your messages.csv file.
-Run the script (e.g., python send_whatsapp_message.py).
+Run the script in the command prompt
 
 ## Disclaimer:
 
