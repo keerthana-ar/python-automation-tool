@@ -1,5 +1,17 @@
-# WhatsApp Bulk Messaging Tool
-This project automates sending WhatsApp messages from a Google sheet using a Python script and a Google Apps Script.
+https://forthebadge.com/images/badges/built-with-love.png
+
+# WhatsApp Bulk Message Sender with Google Sheets Integration
+
+## Description
+
+This Python automation tool utilizes Google Apps Script and the Selenium library to send bulk WhatsApp messages directly from your Google Sheets. It automates the process of exporting phone numbers and messages from a Google Sheet, generating a CSV file, and then using Selenium to send the messages through WhatsApp Web.
+
+## Features:
+
+Extracts phone numbers and messages from a designated Google Sheet.
+Generates a CSV file containing the extracted data.
+Automates WhatsApp Web login using QR code detection (manual scan required).
+Sends personalized WhatsApp messages based on the data in the Google Sheet.
 
 ## Components:
 
@@ -8,17 +20,36 @@ Sends WhatsApp messages to phone numbers listed in a CSV file.
 Uses Selenium WebDriver to interact with the WhatsApp Web interface.
 
 ## Requirements:
-Python 3
+Python 3.x
+Google Apps Script access
+A compatible web driver (e.g., Chrome WebDriver)
+A Google account with access to a Google Sheet
 Selenium WebDriver (Chrome or Firefox) : Install the python selenium library on your device by running the given command on your command prompt.
 ```bash
 pip install selenium
 ```
-Appropriate browser driver (e.g., chromedriver)
 
-Google Apps Script: Creates a CSV file from phone numbers and messages entered in a Google Sheet.
+## Installation
 
-## Requirements:
-Google Workspace account with access to Google Sheets
+1. Set up Google Apps Script:
+
+Create a new Google Sheet.
+Go to Tools > Script editor.
+Paste the provided Google Apps Script code (function exportDataToCSV() {...} ) into the script editor.
+Save the script (e.g., "WhatsAppSender").
+
+2. Install Python Libraries:
+
+Open a terminal or command prompt.
+Run the command: 
+```bash
+pip install selenium
+```
+
+3. Download WebDriver:
+
+Download the appropriate WebDriver for your browser (e.g., Chrome WebDriver) from https://www.selenium.dev/downloads/.
+Extract the downloaded WebDriver and place the executable file in a directory accessible by your Python script.
 
 ## How it Works:
 
