@@ -38,7 +38,7 @@ Selenium WebDriver (Chrome or Firefox) : Install the python selenium library on 
 
 ## Installation
 
-1. Set up Google Apps Script:
+### 1. Set up Google Apps Script:
 
 Create a new Google Sheet.
 
@@ -48,7 +48,8 @@ Paste the provided Google Apps Script code (function exportDataToCSV() {...} ) i
 
 Save the script (e.g., "WhatsAppSender").
 
-2. Install Python Libraries:
+
+### 2. Install Python Libraries:
 
 Open a terminal or command prompt.
 
@@ -57,11 +58,13 @@ Run the command:
 pip install selenium
 ```
 
-3. Download WebDriver:
+
+### 3. Download WebDriver:
 
 Download the appropriate WebDriver for your browser (e.g., Chrome WebDriver) from https://www.selenium.dev/downloads/.
 
 Extract the downloaded WebDriver and place the executable file in a directory accessible by your Python script.
+
 
 ## How it Works:
 
