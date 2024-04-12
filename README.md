@@ -10,14 +10,19 @@ This Python automation tool utilizes Google Apps Script and the Selenium library
 ## Features:
 
 Extracts phone numbers and messages from a designated Google Sheet.
+
 Generates a CSV file containing the extracted data.
+
 Automates WhatsApp Web login using QR code detection (manual scan required).
+
 Sends personalized WhatsApp messages based on the data in the Google Sheet.
 
 ## Components:
 
 Python Script (whatsapp_bulk123.py):
+
 Sends WhatsApp messages to phone numbers listed in a CSV file.
+
 Uses Selenium WebDriver to interact with the WhatsApp Web interface.
 
 ## Requirements:
@@ -36,13 +41,17 @@ Selenium WebDriver (Chrome or Firefox) : Install the python selenium library on 
 1. Set up Google Apps Script:
 
 Create a new Google Sheet.
+
 Go to Tools > Script editor.
+
 Paste the provided Google Apps Script code (function exportDataToCSV() {...} ) into the script editor.
+
 Save the script (e.g., "WhatsAppSender").
 
 2. Install Python Libraries:
 
 Open a terminal or command prompt.
+
 Run the command: 
 ```bash
 pip install selenium
@@ -51,6 +60,7 @@ pip install selenium
 3. Download WebDriver:
 
 Download the appropriate WebDriver for your browser (e.g., Chrome WebDriver) from https://www.selenium.dev/downloads/.
+
 Extract the downloaded WebDriver and place the executable file in a directory accessible by your Python script.
 
 ## How it Works:
@@ -64,20 +74,34 @@ Run the Python script. It will open WhatsApp Web, prompt you to scan the QR code
 ## Instructions:
 
 1. Install Dependencies:
+
 Install Python and Selenium WebDriver for your chosen browser (Chrome or Firefox).
+
 Download the appropriate browser driver (e.g., chromedriver) and place it in a directory accessible by your system.
 
 2. Google Apps Script:
+
 Copy the provided google apps script into a new Google Apps Script project.
+
 Update the script with the specific sheet name and column references where your phone numbers and messages reside.
+
 Run the script to generate the messages.csv file.
+
 Download the CSV file from your google drive to your system.
 
 4. Python Script:
+
 Replace placeholders in whatsapp_bulk.py:
+
 Update driver_path with the absolute path to your downloaded browser driver.
+
 Update file_name with the path to your messages.csv file.
-Run the script in the command prompt
+
+Run the script in the command prompt. For example,
+```bash
+python whatsapp_bulk.py
+```
+
 
 ## Disclaimer:
 
