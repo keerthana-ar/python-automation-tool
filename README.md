@@ -76,13 +76,13 @@ Run the Python script. It will open WhatsApp Web, prompt you to scan the QR code
 
 ## Instructions:
 
-1. Install Dependencies:
+### 1. Install Dependencies:
 
 Install Python and Selenium WebDriver for your chosen browser (Chrome or Firefox).
 
 Download the appropriate browser driver (e.g., chromedriver) and place it in a directory accessible by your system.
 
-2. Google Apps Script:
+### 2. Google Apps Script:
 
 Copy the provided google apps script into a new Google Apps Script project.
 
@@ -92,7 +92,7 @@ Run the script to generate the messages.csv file.
 
 Download the CSV file from your google drive to your system.
 
-4. Python Script:
+### 3. Python Script:
 
 Replace placeholders in whatsapp_bulk.py:
 
@@ -108,9 +108,11 @@ python whatsapp_bulk.py
 
 ## Disclaimer:
 
-Using this tool to automate sending messages might violate WhatsApp's terms of service. Use it responsibly and ethically.
-Be mindful of potential rate limits imposed by WhatsApp to avoid overwhelming their servers or getting your account flagged.
-This documentation provides a basic overview. Refer to the script code for detailed functionality.
+This tool is intended for personal use and educational purposes. Please use it responsibly and ethically.
+
+Be aware that sending unsolicited bulk messages may violate WhatsApp's terms of service.
+
+Consider implementing additional features like progress reporting or error handling for robustness.
 
 ## Additional Notes:
 
