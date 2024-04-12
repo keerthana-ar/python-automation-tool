@@ -22,13 +22,14 @@ Uses Selenium WebDriver to interact with the WhatsApp Web interface.
 
 ## Requirements:
 Python 3.x
+
 Google Apps Script access
+
 A compatible web driver (e.g., Chrome WebDriver)
+
 A Google account with access to a Google Sheet
-Selenium WebDriver (Chrome or Firefox) : Install the python selenium library on your device by running the given command on your command prompt.
-```bash
-pip install selenium
-```
+
+Selenium WebDriver (Chrome or Firefox) : Install the python selenium library on your device.
 
 ## Installation
 
