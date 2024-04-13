@@ -17,13 +17,6 @@ Automates WhatsApp Web login using QR code detection (manual scan required).
 
 Sends personalized WhatsApp messages based on the data in the Google Sheet.
 
-## Components:
-
-Python Script (whatsapp_bulk.py):
-
-Sends WhatsApp messages to phone numbers listed in a CSV file.
-
-Uses Selenium WebDriver to interact with the WhatsApp Web interface.
 
 ## Requirements:
 Python 3.x
@@ -35,6 +28,7 @@ A compatible web driver (e.g., Chrome WebDriver)
 A Google account with access to a Google Sheet
 
 Selenium WebDriver (Chrome or Firefox) : Install the python selenium library on your device.
+
 
 ## Installation
 
